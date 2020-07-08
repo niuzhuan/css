@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>万能清浮动</title>
+	<style>
+		*{
+			margin: 0;
+			padding:0;
+		}
+		#big{
+			background: pink;
+			/*overflow: hidden;*/
+		}
+		.small{
+			width: 200px;
+			height:200px;
+			border:1px solid #000;
+			box-sizing: block-box;
+			background: yellow; 
+			float:left;
+		}
+		/*万能浮动*/
+		#big:after{
+			content:"";
+			height:0;
+			clear:both;
+			display: block;
+			visibility: hidden;
+			overflow: hidden;
+		}
+	</style>		
+</head>
+<body>
+	<div id="big">
+		<div class="small"></div>
+		<div class="small"></div>
+	</div>
+</body>
+</html>

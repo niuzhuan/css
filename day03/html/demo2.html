@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>加号临近选择器</title>
+	<style>
+		div+p{
+			color:red;
+		}
+		div~p{
+			background-color:yellow;
+		}
+		input[value]{
+			background-color: pink;
+		}
+		input[value="gg"]{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<p>吼吼</p>
+	<div>哈哈</div>
+	<P>嘿嘿</P>
+	<P>嘻嘻</P>
+	<P>哼哼</P>
+	<input type="text" value="gg">
+	<input type="text" value="VV
+	">
+
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+			}
+			.ss{/* 盒子 */
+				width:600px;
+				height:400px;
+				position:relative;
+				/* 相对定位 */
+				margin:50px auto;
+				/* 居中 */
+				overflow:hidden;
+				/* 超出部分隐藏 */
+			}
+			.ss img{
+				position:absolute;
+				/* 绝对定位 */
+				height:100%;
+				opacity:1;
+				/* 透明度 */
+				transition: 3s;
+				/* 过渡时间 */
+				z-index:-1;
+				/* 重叠性 */
+			}
+			.ss h2{
+				position:absolute;
+				/* 绝对定位 */
+				left:90px;
+				top:85px;
+				color:white;
+				transform:translateX(-60px);
+					/* 把元素沿着横向移动负60像素 */
+				transition: 3s;
+				/* 过渡时间 */
+			}
+			.ss p{
+				position:absolute;
+				/* 绝对定位 */
+				left:120px;
+				top:130px;
+				color:white;
+				transform:translateY(60px);
+				/* 把元素沿着纵向移动60像素 */
+				opacity:0;
+				/* 透明度 */
+				transition:  3s;
+				/* 过渡时间 */
+			}
+			.ss .xx{
+				width:80%;
+				height:70%;
+				position:absolute;
+				/* 绝对定位 */
+				left:10%;
+				top:15%;
+				border-top:2px /* 上边框 */solid/* 实线 */ white;
+				border-bottom:2px/* 下边框 */ solid/* 实线 */ white;
+				transform:scaleX(0);
+				/* 把元素沿着横向伸缩0像素 */
+				transition:  3s;
+				/* 过渡时间 */
+			}
+			.ss .yy{
+				width:70%;
+				height:80%;
+				position:absolute;
+				/* 绝对定位 */
+				left:15%;
+				top:10%;
+				border-left:2px/* 左边框 */ solid/* 实线 */white;
+				border-right:2px/* 右边框 */ solid/* 实线 */white;
+				transform:scaleY(0);
+				/* 把元素沿着纵向伸缩0像素 */
+				transition:  3s;
+				/* 过渡时间 */
+			}
+			.ss:hover/* 鼠标滑过 */ img{
+				opacity:0.6;
+				/* 透明度 */
+			}
+			.ss:hover h2{
+				transform:translateX(0);
+				/* 把元素沿着横向移动0像素 */
+				opacity:1;
+			}
+			.ss:hover p{
+				transform:translateY(0);
+				/* 把元素沿着纵向移动0像素 */
+				opacity:1;
+				/* 透明度 */
+			}
+			.ss:hover .xx{
+				transform:scaleX(1);
+				/* 鼠标滑过缩放显示的效果 */
+			}
+			.ss:hover .yy{
+				transform:scaleY(1);
+				/* 鼠标滑过缩放显示的效果 */
+			}
+			.t{
+				position:absolute;
+				/* 绝对定位 */
+				z-index:1;
+				/* 层叠性 */
+				display:none;
+				/* 隐藏 */
+				width: 300px;
+				height: 200px;
+				top:115px;
+				left:150px;
+				background:url(img/2.png) no-repeat;
+				background-size:100% 100%;
+			}
+			.t:hover{
+			
+				transform:rotate(360deg);
+			}
+			.ss:hover .t{
+				transition:all  3s;
+				display:block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="ss">
+		<img src="img/1.jpg" alt="">
+			<h2>绘制线条效果</h2>
+			<p>前世，你我生来平凡</p>
+			<div class="xx"></div>
+			<div class="yy"></div>
+			<div class="t"></div>
+		</div>
+	</body>
+</html>

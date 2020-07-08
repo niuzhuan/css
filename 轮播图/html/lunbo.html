@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		.big{
+			width: 500px;
+			height: 312px;
+			overflow:hidden;
+			border:1px solid red;
+			margin:150px auto;
+		}
+		.small{
+			width: 2500px;
+			height: 312px;
+			animation-name:lunbo1;
+			animation-duration:10s;
+			animation-timing-function:linear;
+			animation-delay:1s;
+			animation-iteration-count:infinite;
+			animation-direction:alternate;
+		}
+		.small:hover{
+			animation-play-state:paused;
+		}
+		img{
+			width: 500px;
+			height: 312px;
+			display:block;
+			float:left;
+		}
+		
+		@keyframes lunbo {
+			0%{margin-left:0;}
+			25%{margin-left:-500px;}
+			50%{margin-left:-1000px;}
+			75%{margin-left:-1500px;}
+			100%{margin-left:-2000px;}
+		}
+
+		@keyframes lunbo1 {
+			0%{margin-left:0;}
+			11%{margin-left:0;}
+			22%{margin-left:-500px;}
+			33%{margin-left:-500px;}
+			44%{margin-left:-1000px;}
+			55%{margin-left:-1000px;}
+			66%{margin-left:-1500px;}
+			77%{margin-left:-1500px;}
+			88%{margin-left:-2000px;}
+			100%{margin-left:-2000px;}
+		}
+	</style>
+</head>
+<body>
+	<div class="big">
+		<div class="small">
+			<img src="../img/1.jpg" alt="图片加载错误了" title="">
+			<img src="../img/2.jpg" alt="图片加载错误了" title="">
+			<img src="../img/3.jpg" alt="图片加载错误了" title="">
+			<img src="../img/4.jpg" alt="图片加载错误了" title="">
+			<img src="../img/5.jpg" alt="图片加载错误了" title="">
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		#big{
+			width: 500px;
+			height: 312px;
+			margin:300px auto;
+			overflow:hidden;
+			border-top:10px solid red;
+			border-bottom:10px solid red;
+		}
+		#small{
+			width: 2500px;
+			height: 312px;
+			/* display:flex; */
+			animation:lunbo 10s linear 1s infinite alternate;
+		}
+		#small:hover{
+			animation-play-state:paused;
+		}
+		#small img{
+			width: 500px;
+			height: 312px;
+			display:block;
+			border:0;
+			float:left;
+		}
+
+		@keyframes lunbo {
+			0%{margin-left:0;}
+			25%{margin-left:-500px;}
+			50%{margin-left:-1000px;}
+			75%{margin-left:-1500px;}
+			100%{margin-left:-2000px;}
+		}
+
+		/* @keyframes lunbo1 {
+			0%{margin-left:0;}
+			11%{margin-left:0;}
+			22%{margin-left:-500px;}
+			33%{margin-left:-500px;}
+			44%{margin-left:-1000px;}
+			55%{margin-left:-1000px;}
+			66%{margin-left:-1500px;}
+			77%{margin-left:-1500px;}
+			88%{margin-left:-2000px;}
+			100%{margin-left:-2000px;}
+		} */
+	</style>
+</head>
+<body>
+	<div id="big">
+		<div id="small">
+			<img src="../img/1.jpg" alt="">
+			<img src="../img/2.jpg" alt="">
+			<img src="../img/3.jpg" alt="">
+			<img src="../img/4.jpg" alt="">
+			<img src="../img/5.jpg" alt="">
+		</div>
+	</div>
+</body>
+</html>

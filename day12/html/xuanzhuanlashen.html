@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>旋转拉伸</title>
+	<style>
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+			font-size: 40px;
+			line-height: 200px;
+			font-weight: border;
+			text-align: center;
+			margin:20px auto;
+			transition-duration: 3s;
+
+		}
+		.trans1:hover{
+			transform:rotate(3600deg);
+		}
+		.trans2:hover{
+			transform:scale(2);
+		}
+		.trans3:hover{
+			transform:skewY(300deg);
+		}
+		.trans4:hover{
+			transform:skewX(60deg);
+		}
+		.trans5:hover{
+			transform:skew(5000deg);
+		}
+		.trans6:hover{
+			transform:translate(60PX);
+		}
+		.trans7:hover{
+			transform:translateX(60PX);
+		}
+		.trans8:hover{
+			transform:translateY(60PX);
+		}
+		.all:hover{
+			transform:scale(2) rotate(128deg) skew(38deg) translate(100PX);
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="trans1">旋转</div>
+	<div class="trans2">放大</div>
+	<div class="trans3">拉伸</div>
+	<div class="trans4">拉伸</div>
+	<div class="trans5">拉伸</div>
+	<div class="trans6">位移</div>
+	<div class="trans7">位移X</div>
+	<div class="trans8">位移Y</div>
+	<div class="all">整合</div>
+</body>
+</html>

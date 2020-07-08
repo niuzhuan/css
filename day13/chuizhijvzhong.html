@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>元素垂直居中</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		#big{
+			width: 500px;
+			height: 500px;
+			background-color: pink;
+			position: relative;
+			margin:0 auto;
+		}
+		.small{
+			width: 200px;
+			height: 200px;
+			background-color: green;
+			/*position: absolute;
+			left:50%;
+			top:50%;
+			margin-left:-100px;
+			margin-top:-100px;*/
+
+
+			/*position: absolute;
+			left:0;
+			bottom:0;
+			right:0;
+			top:0;
+			margin: auto;*/
+
+			position: absolute;
+			left:50%;
+			top:50%;
+			transform:translate(-50%,-50%);
+		}
+	</style>
+
+</head>
+<body>
+	<div id="big">
+		<div class="small"></div>
+	</div>
+</body>
+</html>

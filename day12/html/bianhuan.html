@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>变换</title>
+	<style>
+		div{
+			width: 200px;
+			height: 200px;
+			margin:0 auto;
+			
+			position: relative;
+		}
+		img{
+			width: 200px;
+			height: 200px;
+			display: block;
+			position: absolute;
+			top:0;
+			left:0;
+			transition:3s;
+
+		}
+		.img{
+			transform:scale(0);
+
+		}
+		div:hover .img2{
+			transform:scale(0);
+		}
+		div:hover .img1{
+
+			transform:scale(1);
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="../img/1.gif" alt="" class="img1">
+		<img src="../img/7.jpg" alt="" class="img2">
+	</div>
+</body>
+</html>

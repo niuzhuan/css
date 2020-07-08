@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#a{
+			width: 500px;
+			height: 312px;
+			overflow:hidden;
+			margin:150px auto;
+		}
+		#b{
+			width: 2500px;
+			height: 312px;
+			animation-name:lunbo1;
+			animation-duration:20s;
+			animation-timing-function:linear;
+			animation-delay:1s;
+			animation-iteration-count:infinite;
+			animation-direction:alternate;
+		}
+		#b:hover{
+			animation-play-state:paused;
+		}
+		img{
+			display:block;
+			float:left;
+		}
+
+		@keyframes lunbo {
+			0%{margin-left:0;}
+			25%{margin-left:-500px;}
+			50%{margin-left:-1000px;}
+			75%{margin-left:-1500px;}
+			100%{margin-left:-2000px;}
+		}
+
+		@keyframes lunbo1 {
+			0%{margin-left:0;}
+			11%{margin-left:0;}
+			22%{margin-left:-500px;}
+			33%{margin-left:-500px;}
+			44%{margin-left:-1000px;}
+			55%{margin-left:-1000px;}
+			66%{margin-left:-1500px;}
+			77%{margin-left:-1500px;}
+			88%{margin-left:-2000px;}
+			100%{margin-left:-2000px;}
+		}
+	</style>
+</head>
+<body>
+	<div id="a">
+		<div id="b">
+			<img src="../img/1.jpg" alt="">
+			<img src="../img/2.jpg" alt="">
+			<img src="../img/3.jpg" alt="">
+			<img src="../img/4.jpg" alt="">
+			<img src="../img/5.jpg" alt="">
+		</div>
+	</div>
+</body>
+</html>

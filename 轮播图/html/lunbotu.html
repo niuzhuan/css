@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		.c1{
+			position:absolute;
+			width: 500px;
+			height: 312px;	
+			overflow:hidden;
+		}
+		.c2{
+			width: 500px;
+			height: 312px;
+		
+		}
+		.c2 img{
+			float:left;
+		}
+		ul{
+			position:absolute;
+			left:30px;
+			top:280px;
+			/* opacity:0.5; */
+		}
+		ul li{
+			float:left;
+			list-style:none;
+			margin-left:10px;
+		}
+		@keyframes ma {
+ 9         0%,20% {        margin-left: 0px;       }
+10         25%,45% {       margin-left: -500px;    }
+11         50%,70% {       margin-left: -1000px;    }
+12         75%,100% {       margin-left: -1500px;    }
+13 
+14     }
+	</style>
+</head>
+<body>
+	<div class="c1">
+		<div class="c2">
+			<img src="../img/1.jpg" alt="">
+			<img src="../img/2.jpg" alt="">
+			<img src="../img/3.jpg" alt="">
+			<img src="../img/4.jpg" alt="">
+			<img src="../img/5.jpg" alt="">
+			<ul>
+				<li>11111</li>
+				<li>22222</li>
+				<li>33333</li>
+				<li>44444</li>
+				<li>55555</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

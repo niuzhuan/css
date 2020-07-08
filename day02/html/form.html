@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>form表单</title>
+</head>
+<body>
+	<form action="后台接口" method="post/get" name="表单名字">
+		<!-- 行内块元素input,img-->
+		<!-- 文本框 <input type="text" value="默认值">-->
+		<!-- 文本框 <input type="text" placeholder="默认提示值">-->
+		<p>请输入名字<input type="text"></p>
+		<p>请输入电话<input type="text" value="+86"></p>
+		<p>请输入地址<input type="text" placeholder="北京市"></p>
+		<!-- 密码框 -->
+		<p>请输入密码<input type="password"></p>
+		<!-- 按钮   提交按钮  重置按钮   普通按钮 -->
+		<!-- 提交按钮 <input type="submit" value='随便'>-->
+		<input type="submit" value="提提">
+		<!-- 重置按钮 -->
+		<input type="reset" value="隋边边">
+		<!-- 普通按钮 -->
+		<input type="button" value="钮钮">
+		<!-- 普通按钮2 他和提交按钮的区别：普通按钮只跳转不提交信息；但是提交按钮跳转并且提交信息-->
+		<button>按按</button>
+		<hr>
+		<!-- 单选按钮 同一组name值一定要相同-->
+		<label><input type="radio" name="dog">猫h
+		<!-- checked="checked"默认选中 -->
+		<input type="radio" name="dog" checked="checked">狗
+		<input type="radio" name="dog">猪
+		<input type="radio" name="dog" disabled="disabled">兔子
+		<hr>
+		<!-- 复选框 同一组name值一定要相同-->
+		<input type="checkbox" name="pig">西瓜
+		<input type="checkbox" name="pig">桃子
+		<input type="checkbox" name="pig" checked="checked">哈密瓜
+		<input type="checkbox" name="pig">葡萄
+		<input type="checkbox" name="pig" disabled="disabled">梨
+		<hr>
+		<!-- 提示标签 <label></label>-->
+		<label><input type="checkbox" name="pig">西瓜</label>
+		<label><input type="checkbox" name="pig">桃子</label>
+		<label><input type="checkbox" name="pig" checked="checked">哈密瓜</label>
+		<label><input type="checkbox" name="pig">葡萄</label>
+		<label><input type="checkbox" name="pig" disabled="disabled">梨</label>
+		
+		<!-- 必填项 required="required" -->
+		<p>请输入名字<input type="text" required="required"></p>
+		<!-- 只读  readonly="readonly"-->
+		<p>请输入城市<input type="text" value="北京市" readonly="readonly"></p>
+		<hr>
+		<!-- 下拉框 -->
+		<select>
+			<option>2002</option>
+			<option>2001</option>
+			<option>1990</option>
+			<option>1980</option>
+		</select>
+		<!-- 多行文本域 -->
+		<!-- cols字符宽度  -->
+	<!-- 一个英文是一个字符宽度；一个汉字是两个字符宽度 -->
+	<!-- rows行数 -->
+		<textarea cols="30" rows="10"></textarea>
+		<hr>
+		<!-- 扩展：电子邮箱+聚焦 -->
+		<!-- multiple可以同时写多个邮箱，两者之间用','隔开 -->
+		<input type="email" autofocus="autofocus" multiple="2">
+		<!--扩展： 数字框   最大值    最小值   间隔-->
+		<input type="number" max="50" min="10" step="5">
+		<!-- 扩展：上传文件 -->
+		<input type="file">
+		<!-- 扩展：网址 -->
+		<input type="url">
+		<!-- 拓展：时间 -->
+		<!-- 时分 -->
+		<input type="time">
+		<!-- 扩展：年月日 -->
+		<input type="date">
+		<!-- 扩展：年+周 -->
+		<input type="week">
+		<!-- 扩展：年+月 -->
+		<input type="month">
+		<!-- 扩展：年月日时分 -->
+		<input type="datetime-local">
+		<!-- 扩展：UTC时间；一般浏览器不好使 -->
+		<input type="datetime">
+		<!-- 扩展搜索框 -->
+		<input type="search">
+		<!-- 扩展图片框 -->
+		<input type="image" src="../3.gif" width="50" height="50">
+		<!-- 扩展电话+正则（数字0~9共写11位） -->
+		<input type="tel" pattern="[0-9]{11}">
+		<!-- 扩展:颜色框 -->
+		<input type="color">
+		<!-- 扩展:进度条 -->
+		<input type="range" step="5">
+	</form>
+</body>
+</html>
